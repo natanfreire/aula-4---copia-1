@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+</head>
+<body>
+    <style>
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: red;
+          margin-left: 0;
+        }
+        .animeEsquerda{
+            transition: 1s;
+            margin-left: 20px;
+            background-color: green;
+        }
+    </style>
+    
+    <div class="box"></div>
+
+
+    <script>
+        /*
+        var box = document.querySelectorAll('.box')[0];
+
+        setTimeout(()=>{
+            box.classList.add('animeEsquerda');
+        },1000);
+
+        */
+
+        var box = document.querySelectorAll('.box')[0]
+
+        box.addEventListener('click', ()=> {
+            box.classList.add('animeEsquerda')
+        })
+    </script>
+    
+</body>
+</html>
